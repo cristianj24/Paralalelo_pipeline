@@ -9,7 +9,7 @@ pipeline {
             parallel {
                 stage('Slave 1') {
                     agent {
-                        label "Agent2_1"
+                        label "Agente2_1"
                     }
                     steps {
                         git url: 'https://github.com/cristianj24/Paralalelo_pipeline.git'
@@ -22,7 +22,7 @@ pipeline {
 
                 stage('Slave 2') {
                     agent {
-                        label "Agent2_2"
+                        label "Agente2_2"
                     }
                     steps {
                         git url: 'https://github.com/cristianj24/Paralalelo_pipeline.git'
